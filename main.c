@@ -97,6 +97,7 @@ board_t* update_board(board_t* boardptr, const char symbol/* X or O */)
 
 void print_board(board_t* boardptr)
 {
+    printf(
     "                    |                    |\n"
 "              %c        |       %c           |         %c        \n"
 "                        |                    |\n"
