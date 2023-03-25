@@ -47,6 +47,15 @@ board_t* update_board(board_t* boardptr, const char symbol/* X or O */)
             default:
                 break;
         }
+        if(i>= 3)
+        {
+            i = i - (i%3)
+        }
+
+        if(j>= 3)
+        {
+            j = j - (i%3)
+        }
         
     } while (key != '\\');
    if(symbol == 'X')
@@ -133,6 +142,6 @@ bool win_check_function(board_t* boardptr, const char symbol)
 
 int main(void)
 {
-    //haven't yet implemented anything here yet
+    
     return 0;
 }
