@@ -33,29 +33,29 @@ board_t* update_board(board_t* boardptr, const char symbol/* X or O */)
         switch (key) 
         {
             case '>':
-                i++;
+            if(i!=2)
+                {i++;}
+            else{fprintf(stderr, "integerError code -> 1;" )}
                 break;
             case '<':
-                i--;
+            if(i!=0)
+                {i--;}
+            else{fprintf(stderr, "integerError code -> 2;" )}
                 break;
             case ' ':
-                j++;
+            if(j!=2)
+                {j++;}
+            else{fprintf(stderr, "integerError code -> 3;" )}
                 break;
             case 'm':
-                j--;
+            if(j!=0)
+                {j--;}
+            else{fprintf(stderr, "integerError code -> 4;" )}
                 break;
             default:
                 break;
         }
-        if(i > 2)
-        {
-            *(&i) = 2;
-        }
-
-        if(j > 2)
-        {
-            *(&j) = 2;
-        }
+        
         
     } while (key != '\\');
    if(symbol == 'X')
