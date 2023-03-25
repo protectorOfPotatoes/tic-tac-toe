@@ -133,6 +133,6 @@ bool win_check_function(board_t* boardptr, const char symbol)
 
 int main(void)
 {
-    
+    //haven't yet implemented anything here yet
     return 0;
 }
