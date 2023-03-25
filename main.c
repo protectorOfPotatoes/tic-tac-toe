@@ -49,12 +49,12 @@ board_t* update_board(board_t* boardptr, const char symbol/* X or O */)
         }
         if(i > 2)
         {
-            i = 2;
+            *(&i) = 2;
         }
 
         if(j > 2)
         {
-            j = 2;
+            *(&j) = 2;
         }
         
     } while (key != '\\');
