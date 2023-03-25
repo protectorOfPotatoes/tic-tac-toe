@@ -34,28 +34,21 @@ board_t* update_board(board_t* boardptr, const char symbol/* X or O */)
         {
             case '>':
             if(i!=2)
-                {i++;}
-            else{fprintf(stderr, "integerError code -> 1;" )}
+                {i++;} 
                 break;
             case '<':
             if(i!=0)
-                {i--;}
-            else{fprintf(stderr, "integerError code -> 2;" )}
+                {i--;} 
                 break;
             case ' ':
             if(j!=2)
-                {j++;}
-            else{fprintf(stderr, "integerError code -> 3;" )}
+                {j++;} 
                 break;
             case 'm':
             if(j!=0)
-                {j--;}
-            else{fprintf(stderr, "integerError code -> 4;" )}
+                {j--;} 
                 break;
-            default:
-                break;
-        }
-        
+       
         
     } while (key != '\\');
    if(symbol == 'X')
@@ -97,24 +90,20 @@ board_t* update_board(board_t* boardptr, const char symbol/* X or O */)
 
 void print_board(board_t* boardptr)
 {
-    printf(
-    "                    |                    |\n"
-"              %c        |       %c           |         %c        \n"
-"                        |                    |\n"
-"       _________________|____________________|___________________\n"
-"                        |                    |\n"
-"              %c        |       %c           |         %c\n"
-"                        |                    |\n"
-"       _________________|____________________|___________________\n"
-"                        |                    |                   \n"
-"                        |                    |\n"
-"              %c        |       %c           |         %c\n"
-"                        |                    |\n"
-"                        |                    |\n"
-
-        boardptr->row1[0], boardptr->row1[1], boardptr->row1[2],
-        boardptr->row2[0], boardptr->row2[1], boardptr->row2[2],
-        boardptr->row3[0], boardptr->row3[1], boardptr->row3[2]                                                                         
+   printf(
+"|-------------------------|\n" 
+"|        |        |       |\n"
+"|   %c   |   %c   |   %c  |\n"
+"|--------+--------+-------|\n"
+"|        |        |       |\n"
+"|   %c   |   %c   |   %c  |\n"
+"|--------+--------+-------|\n"
+"|        |        |       |\n"
+"|   %c   |   %c   |   %c  |\n"
+"|-------------------------|\n"
+        ,boardptr->row1[0], boardptr->row1[1], boardptr->row1[2],
+        ,boardptr->row2[0], boardptr->row2[1], boardptr->row2[2],
+        ,boardptr->row3[0], boardptr->row3[1], boardptr->row3[2]                                                                         
     );
     
 
