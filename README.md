@@ -14,16 +14,16 @@ status: UPDATE-3 4:22PM 25.3.23 Saturday    --> fixed integer over flow issue (L
 
 #tic tac toe code:
 
-played by two players: X and O ;
-a struct -> board;
-board -->update_board function
-      -->print_board function
-      -->check if game won function
+#played by two players: X and O ;
+#a struct -> board;
+#board -->update_board function
+      #-->print_board function
+      #-->check if game won function
 
 #how to traverse the board for tic tac toe playing:
 
-# press '<' to go left
-# press 'm' to go up
-# press ' ' to go down
-# click 'x' or 'o' to mark the cell
+ #press '<' to go left
+ #press 'm' to go up
+ #press ' ' to go down
+ #click 'x' or 'o' to mark the cell
     
