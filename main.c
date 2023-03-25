@@ -47,14 +47,14 @@ board_t* update_board(board_t* boardptr, const char symbol/* X or O */)
             default:
                 break;
         }
-        if(i>= 3)
+        if(i > 2)
         {
-            i = i - (i%3)
+            i = 2;
         }
 
-        if(j>= 3)
+        if(j > 2)
         {
-            j = j - (i%3)
+            j = 2;
         }
         
     } while (key != '\\');
