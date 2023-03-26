@@ -3,7 +3,7 @@
 #INCOMPLETE#
 
 just tryna code tic tac toe
-      #=>status: UPDATE-2 12:59 PM 25.3.23 Saturday  --> added update, print and winner checking functions\n
+      #=>status: UPDATE-2 12:59 PM 25.3.23 Saturday  --> added update, print and winner checking functions
       #=>tatus: UPDATE-3 4:22PM 25.3.23 Saturday    --> fixed integer over flow issue (Ln 36)
 
 
